@@ -1,0 +1,437 @@
+{
+  "pagelen": 10,
+  "values": [
+    {
+      "scm": "hg",
+      "website": null,
+      "has_wiki": true,
+      "uuid": "{ce2a7deb-bac9-4be0-80c1-cca49f40de8e}",
+      "links": {
+        "watchers": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork/watchers"
+        },
+        "branches": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork/refs/branches"
+        },
+        "tags": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork/refs/tags"
+        },
+        "commits": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork/commits"
+        },
+        "clone": [
+          {
+            "href": "https://bitbucket.org/1team/myquotefork",
+            "name": "https"
+          },
+          {
+            "href": "ssh://hg@bitbucket.org/1team/myquotefork",
+            "name": "ssh"
+          }
+        ],
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork"
+        },
+        "source": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork/src"
+        },
+        "html": {
+          "href": "https://bitbucket.org/1team/myquotefork"
+        },
+        "avatar": {
+          "href": "https://bytebucket.org/ravatar/%7Bce2a7deb-bac9-4be0-80c1-cca49f40de8e%7D?ts=html5"
+        },
+        "hooks": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork/hooks"
+        },
+        "forks": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork/forks"
+        },
+        "downloads": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork/downloads"
+        },
+        "issues": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork/issues"
+        },
+        "pullrequests": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myquotefork/pullrequests"
+        }
+      },
+      "fork_policy": "allow_forks",
+      "name": "myquotefork",
+      "project": {
+        "key": "PROJ",
+        "type": "project",
+        "uuid": "{ab52aaeb-16ad-4fb0-bb1d-47e4f00367ff}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/teams/1team/projects/PROJ"
+          },
+          "html": {
+            "href": "https://bitbucket.org/account/user/1team/projects/PROJ"
+          },
+          "avatar": {
+            "href": "https://bitbucket.org/account/user/1team/projects/PROJ/avatar/32"
+          }
+        },
+        "name": "Untitled project"
+      },
+      "language": "html/css",
+      "created_on": "2013-06-27T21:25:47.254192+00:00",
+      "parent": {
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/repositories/tutorials/tutorials.bitbucket.org"
+          },
+          "html": {
+            "href": "https://bitbucket.org/tutorials/tutorials.bitbucket.org"
+          },
+          "avatar": {
+            "href": "https://bytebucket.org/ravatar/%7B9970a9b6-2d86-413f-8555-da8e1ac0e542%7D?ts=72141"
+          }
+        },
+        "type": "repository",
+        "name": "tutorials.bitbucket.org",
+        "full_name": "tutorials/tutorials.bitbucket.org",
+        "uuid": "{9970a9b6-2d86-413f-8555-da8e1ac0e542}"
+      },
+      "mainbranch": {
+        "type": "named_branch",
+        "name": "default"
+      },
+      "full_name": "1team/myquotefork",
+      "has_issues": true,
+      "owner": {
+        "username": "1team",
+        "display_name": "the team",
+        "type": "team",
+        "uuid": "{aa559944-83c9-4963-a9a8-69ac8d9cf5d2}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/teams/%7Baa559944-83c9-4963-a9a8-69ac8d9cf5d2%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7Baa559944-83c9-4963-a9a8-69ac8d9cf5d2%7D/"
+          },
+          "avatar": {
+            "href": "https://bitbucket.org/account/1team/avatar/"
+          }
+        }
+      },
+      "updated_on": "2014-01-13T22:07:54.497721+00:00",
+      "size": 75531453,
+      "type": "repository",
+      "slug": "myquotefork",
+      "is_private": false,
+      "description": ""
+    },
+    {
+      "scm": "git",
+      "website": null,
+      "has_wiki": false,
+      "uuid": "{22a41ea0-fbab-4249-bf6e-d89c759edc80}",
+      "links": {
+        "watchers": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myarfx/watchers"
+        },
+        "branches": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myarfx/refs/branches"
+        },
+        "tags": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myarfx/refs/tags"
+        },
+        "commits": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myarfx/commits"
+        },
+        "clone": [
+          {
+            "href": "https://bitbucket.org/1team/myarfx.git",
+            "name": "https"
+          },
+          {
+            "href": "git@bitbucket.org:1team/myarfx.git",
+            "name": "ssh"
+          }
+        ],
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myarfx"
+        },
+        "source": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myarfx/src"
+        },
+        "html": {
+          "href": "https://bitbucket.org/1team/myarfx"
+        },
+        "avatar": {
+          "href": "https://bytebucket.org/ravatar/%7B22a41ea0-fbab-4249-bf6e-d89c759edc80%7D?ts=java"
+        },
+        "hooks": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myarfx/hooks"
+        },
+        "forks": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myarfx/forks"
+        },
+        "downloads": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myarfx/downloads"
+        },
+        "pullrequests": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/myarfx/pullrequests"
+        }
+      },
+      "fork_policy": "allow_forks",
+      "name": "MyArfX",
+      "project": {
+        "key": "PROJ",
+        "type": "project",
+        "uuid": "{ab52aaeb-16ad-4fb0-bb1d-47e4f00367ff}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/teams/1team/projects/PROJ"
+          },
+          "html": {
+            "href": "https://bitbucket.org/account/user/1team/projects/PROJ"
+          },
+          "avatar": {
+            "href": "https://bitbucket.org/account/user/1team/projects/PROJ/avatar/32"
+          }
+        },
+        "name": "Untitled project"
+      },
+      "language": "java",
+      "created_on": "2013-06-27T21:42:26.164998+00:00",
+      "mainbranch": {
+        "type": "branch",
+        "name": "master"
+      },
+      "full_name": "1team/myarfx",
+      "has_issues": false,
+      "owner": {
+        "username": "1team",
+        "display_name": "the team",
+        "type": "team",
+        "uuid": "{aa559944-83c9-4963-a9a8-69ac8d9cf5d2}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/teams/%7Baa559944-83c9-4963-a9a8-69ac8d9cf5d2%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7Baa559944-83c9-4963-a9a8-69ac8d9cf5d2%7D/"
+          },
+          "avatar": {
+            "href": "https://bitbucket.org/account/1team/avatar/"
+          }
+        }
+      },
+      "updated_on": "2013-09-10T22:20:02.512070+00:00",
+      "size": 203173,
+      "type": "repository",
+      "slug": "myarfx",
+      "is_private": false,
+      "description": ""
+    },
+    {
+      "scm": "git",
+      "website": "",
+      "has_wiki": false,
+      "uuid": "{28805a1d-7519-48c4-93eb-839367dba5e0}",
+      "links": {
+        "watchers": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/testfoobar/watchers"
+        },
+        "branches": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/testfoobar/refs/branches"
+        },
+        "tags": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/testfoobar/refs/tags"
+        },
+        "commits": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/testfoobar/commits"
+        },
+        "clone": [
+          {
+            "href": "https://bitbucket.org/1team/testfoobar.git",
+            "name": "https"
+          },
+          {
+            "href": "git@bitbucket.org:1team/testfoobar.git",
+            "name": "ssh"
+          }
+        ],
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/testfoobar"
+        },
+        "source": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/testfoobar/src"
+        },
+        "html": {
+          "href": "https://bitbucket.org/1team/testfoobar"
+        },
+        "avatar": {
+          "href": "https://bytebucket.org/ravatar/%7B28805a1d-7519-48c4-93eb-839367dba5e0%7D?ts=default"
+        },
+        "hooks": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/testfoobar/hooks"
+        },
+        "forks": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/testfoobar/forks"
+        },
+        "downloads": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/testfoobar/downloads"
+        },
+        "pullrequests": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/testfoobar/pullrequests"
+        }
+      },
+      "fork_policy": "allow_forks",
+      "name": "testfoobar",
+      "project": {
+        "key": "PROJ",
+        "type": "project",
+        "uuid": "{ab52aaeb-16ad-4fb0-bb1d-47e4f00367ff}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/teams/1team/projects/PROJ"
+          },
+          "html": {
+            "href": "https://bitbucket.org/account/user/1team/projects/PROJ"
+          },
+          "avatar": {
+            "href": "https://bitbucket.org/account/user/1team/projects/PROJ/avatar/32"
+          }
+        },
+        "name": "Untitled project"
+      },
+      "language": "",
+      "created_on": "2013-11-08T01:10:10.411699+00:00",
+      "mainbranch": null,
+      "full_name": "1team/testfoobar",
+      "has_issues": false,
+      "owner": {
+        "username": "1team",
+        "display_name": "the team",
+        "type": "team",
+        "uuid": "{aa559944-83c9-4963-a9a8-69ac8d9cf5d2}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/teams/%7Baa559944-83c9-4963-a9a8-69ac8d9cf5d2%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7Baa559944-83c9-4963-a9a8-69ac8d9cf5d2%7D/"
+          },
+          "avatar": {
+            "href": "https://bitbucket.org/account/1team/avatar/"
+          }
+        }
+      },
+      "updated_on": "2013-11-08T01:10:10.448686+00:00",
+      "size": 33348,
+      "type": "repository",
+      "slug": "testfoobar",
+      "is_private": false,
+      "description": ""
+    },
+    {
+      "scm": "git",
+      "website": "",
+      "has_wiki": false,
+      "uuid": "{21fa9bf8-b5b2-4891-97ed-d590bad0f871}",
+      "links": {
+        "watchers": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/moxie/watchers"
+        },
+        "branches": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/moxie/refs/branches"
+        },
+        "tags": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/moxie/refs/tags"
+        },
+        "commits": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/moxie/commits"
+        },
+        "clone": [
+          {
+            "href": "https://bitbucket.org/1team/moxie.git",
+            "name": "https"
+          },
+          {
+            "href": "git@bitbucket.org:1team/moxie.git",
+            "name": "ssh"
+          }
+        ],
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/moxie"
+        },
+        "source": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/moxie/src"
+        },
+        "html": {
+          "href": "https://bitbucket.org/1team/moxie"
+        },
+        "avatar": {
+          "href": "https://bytebucket.org/ravatar/%7B21fa9bf8-b5b2-4891-97ed-d590bad0f871%7D?ts=default"
+        },
+        "hooks": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/moxie/hooks"
+        },
+        "forks": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/moxie/forks"
+        },
+        "downloads": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/moxie/downloads"
+        },
+        "pullrequests": {
+          "href": "https://api.bitbucket.org/2.0/repositories/1team/moxie/pullrequests"
+        }
+      },
+      "fork_policy": "allow_forks",
+      "name": "moxie",
+      "project": {
+        "key": "PROJ",
+        "type": "project",
+        "uuid": "{ab52aaeb-16ad-4fb0-bb1d-47e4f00367ff}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/teams/1team/projects/PROJ"
+          },
+          "html": {
+            "href": "https://bitbucket.org/account/user/1team/projects/PROJ"
+          },
+          "avatar": {
+            "href": "https://bitbucket.org/account/user/1team/projects/PROJ/avatar/32"
+          }
+        },
+        "name": "Untitled project"
+      },
+      "language": "",
+      "created_on": "2013-11-08T01:11:03.222520+00:00",
+      "mainbranch": null,
+      "full_name": "1team/moxie",
+      "has_issues": false,
+      "owner": {
+        "username": "1team",
+        "display_name": "the team",
+        "type": "team",
+        "uuid": "{aa559944-83c9-4963-a9a8-69ac8d9cf5d2}",
+        "links": {
+          "self": {
+            "href": "https://api.bitbucket.org/2.0/teams/%7Baa559944-83c9-4963-a9a8-69ac8d9cf5d2%7D"
+          },
+          "html": {
+            "href": "https://bitbucket.org/%7Baa559944-83c9-4963-a9a8-69ac8d9cf5d2%7D/"
+          },
+          "avatar": {
+            "href": "https://bitbucket.org/account/1team/avatar/"
+          }
+        }
+      },
+      "updated_on": "2013-11-08T01:11:03.263237+00:00",
+      "size": 33348,
+      "type": "repository",
+      "slug": "moxie",
+      "is_private": false,
+      "description": ""
+    }
+  ],
+  "page": 1,
+  "size": 4
+}
