@@ -11,11 +11,11 @@ If steps 2 to 4 takes more than 15mins make the problem you are trying to solve 
 
 ---
 
-Examples: nb these steps are about behavior, not what we think the code will do / its functions.
+Examples: nb these steps are about behavior, not what we think the code will do / its internal functions.
 
 "I expect the table to be four feet in diameter"
 - test fails as i have no table
-I cut a piece of wood that is four fee in diameter
+I cut a piece of wood that is four foot in diameter
 - The test passes
 
 "I expect the table to be three feet high"
@@ -29,36 +29,3 @@ I add several legs
 - The test passes
 
 ---
-
-Project Setup (Javascript)
-
-```
-// create directory
-mkdir <project-name>
-// create package.json file
-npm init -y
-// install jest
-npm install --save-dev jest
-// install babel to compile your code
-npm install --save-dev @babel/core
-npm install --save-dev @babel/preset-env
-npm install --save-dev @babel/cli
-// create a config for babel
-touch .babelrc
-{
-  "presets": ["@babel/preset-env"]
-}
-// create a test file add.test.js and add to a src directory (and crate a build dir)
-import add from '../src/add';
-
-describe('add', function () {
-  it('should return addition of two numbers', () => {
-    expect(add(1,1)).toBe(2);
-  });
-});
-
-// create your code file add.js
-const add = (a,b) => a+b;
-
-export default add;
-```

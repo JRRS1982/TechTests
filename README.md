@@ -3,9 +3,9 @@
 A repository to keep the tech tests I have been given when looking for work / for fun and practice.
 
 Todo 
-- Blackjack 
-- Guardian Tech Tests https://github.com/guardian/coding-exercises
+- [x] Blackjack 
 - Gilded Rose https://github.com/emilybache/GildedRose-Refactoring-Kata
+- Guardian Tech Tests https://github.com/guardian/coding-exercises
 - Prime Factors https://github.com/naush/prime_factors
 - Bank Kata https://github.com/sandromancuso/Bank-kata
 - Theatrical Players https://github.com/emilybache/Theatrical-Players-Refactoring-Kata
