@@ -3,8 +3,8 @@
 A repository to keep the tech tests I have been given when looking for work / for fun and practice.
 
 Todo 
-- [x] Blackjack 
-- Gilded Rose https://github.com/emilybache/GildedRose-Refactoring-Kata
+- [x] blackjack
+- [x] gilded-rose
 - Guardian Tech Tests https://github.com/guardian/coding-exercises
 - Prime Factors https://github.com/naush/prime_factors
 - Bank Kata https://github.com/sandromancuso/Bank-kata
