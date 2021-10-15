@@ -9,7 +9,7 @@ See the [original git repo for the kata](https://github.com/emilybache/GildedRos
 ## Installation 
 
 1. `npm install` - install packages
-1. `npm start` - startup program with concurrently to watch and compile changes that happen in the src directory.
+1. `npm start` - startup program with concurrently to compile ts into a build directory and watch for changes that happen in the src directory and recompile.
 1. `npm test` - run test suite
 
 ## Learning
@@ -20,7 +20,7 @@ See the [original git repo for the kata](https://github.com/emilybache/GildedRos
 
 ## Future development
 
-- [ ] AC stated we should not change the Item class, but feels like that is the logical step
-    - [ ] Make items that implement their own updateQuality function
+- AC stated we should not change the Item class, but feels like that is the logical step - which is probably why its not allowed.
+    - [ ] If it was allowed I woudl think about making items that implement their own updateQuality function.
     - [ ] Loop over each item in the shop and call that function.
-- [ ] Write more tests with the original if block hell, feel like this was too easy.
+- [ ] Write more tests around the original if block hell, feel like this was too easy and I missed some.
