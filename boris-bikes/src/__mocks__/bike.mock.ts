@@ -1,6 +1,6 @@
-import { Bike } from "./../Bike";
+import { IBike } from "./../Bike";
 
-export const bike = (overwrites?: Partial<Bike>): Bike => ({
+export const bike = (overwrites?: Partial<IBike>): IBike => ({
   working: true,
   reportBroken: () => {},
   ...overwrites,
