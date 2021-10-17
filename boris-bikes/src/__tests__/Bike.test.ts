@@ -1,4 +1,4 @@
-import { Bike } from "./Bike";
+import { Bike } from "../Bike";
 
 describe("Bike", () => {
   let bike: Bike;

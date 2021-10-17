@@ -1,5 +1,11 @@
 export class Bike {  
-  get working() {
-    return true;
+  working: boolean;
+
+  constructor() {
+    this.working = true;
+  }
+
+  reportBroken() {
+    this.working = false;
   }
 }
