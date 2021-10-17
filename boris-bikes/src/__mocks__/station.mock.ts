@@ -1,11 +1,11 @@
-import { IBike } from "../Bike";
-import { IStation } from "../Station";
+import { IStation } from "../IStation";
 
 export const station = (overwrites?: Partial<IStation>): IStation => ({
   capacity: 20,
-  bikes: [],
-  dock: () => {},
+  vehicles: [],
   setCapacity: () => {},
-  releaseBike: () => {},
+  releaseVehicle: () => undefined,
+  dock: () => {},
+  collection: () => [],
   ...overwrites,
 });

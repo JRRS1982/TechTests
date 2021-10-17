@@ -1,57 +1,47 @@
-import { IBike } from "./Bike";
-
-export interface IStation {
-  capacity: number;
-  bikes: IBike[];
-  dock: () => void;
-  releaseBike: () => void;
-  setCapacity: () => void;
-}
+import { IVehicle } from './IVehicle';
 
 export class Station {
-  bikes: IBike[];
   capacity: number = 20;
+  vehicles: IVehicle[];
 
   constructor() {
-    this.bikes = [];
+    this.vehicles = [];
   }
 
-  dock(bike: IBike) {
-    if (this.bikes.length < this.capacity) {
-      this.bikes.push(bike);
+  dock(vehicle: IVehicle): void {
+    if (this.vehicles.length < this.capacity) {
+      this.vehicles.push(vehicle);
     } else {
       throw new Error("Over capacity");
     }
   }
 
-  setCapacity(newCapacity: number) {
+  setCapacity(newCapacity: number): void {
     this.capacity = newCapacity;
   }
 
-  releaseBike() {
-    if (this.bikes.length > 0) {
-      this.get();
-    }
+  releaseVehicle(): IVehicle | undefined {
+    return this.get();
   }
 
-  releaseBrokenItems(): IBike[] {
-    let working = this.bikes.filter((item) => {
+  collection(): IVehicle[] {
+    let working = this.vehicles.filter((item) => {
       return item.working
     })
 
-    let notWorking =  this.bikes.filter((item) => {
+    let notWorking =  this.vehicles.filter((item) => {
       return item.working === false
     })
 
-    this.bikes = working;
+    this.vehicles = working;
 
     return notWorking;
   }
 
   private get() {
-    for (let index = 0; index < this.bikes.length; index++) {
-      if (this.bikes[index].working) {
-        this.bikes.splice(index);
+    for (let index = 0; index < this.vehicles.length; index++) {
+      if (this.vehicles[index].working) {
+        return this.vehicles.splice(index)[0];
       }
     }
   }

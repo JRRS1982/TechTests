@@ -1,18 +1,18 @@
-import { IBike } from "./Bike";
-import { Station } from "./Station";
+import { IStorage } from './IStorage';
+import { IVehicle } from "./IVehicle";
 
 export class Van {
-  storage: IBike[] = [];
+  storage: IVehicle[] = [];
 
   constructor() {
     this.storage = [];
   }
 
-  collectBroken(station: Station) {
-    let broken = station.releaseBrokenItems();
+  collect(storage: IStorage) {
+    let items = storage.collection();
 
-    for (let index = 0; index < broken.length; index++) {
-      this.storage.push(broken[index]);
+    for (let index = 0; index < items.length; index++) {
+      this.storage.push(items[index]);
     }
   }
 }

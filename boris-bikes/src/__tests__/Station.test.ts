@@ -13,43 +13,49 @@ describe("Station", () => {
 
   it("should dock a bike", () => {
     station.dock(mockBike);
-    expect(station.bikes.length).toEqual(1);
+    expect(station.vehicles.length).toEqual(1);
   });
 
   it("should dock a broken bike", () => {
     station.dock(mockBrokenBike);
-    expect(station.bikes.length).toEqual(1);
+    expect(station.vehicles.length).toEqual(1);
   });
 
   it("should release a bike", () => {
     station.dock(mockBike);
-    expect(station.bikes.length).toEqual(1);
-    station.releaseBike();
-    expect(station.bikes.length).toEqual(0);
+    expect(station.vehicles.length).toEqual(1);
+    station.releaseVehicle();
+    expect(station.vehicles.length).toEqual(0);
   });
 
   it("should only release a bike if one is available", () => {
-    let myBike = station.releaseBike();
+    let myBike = station.releaseVehicle();
     expect(myBike).toEqual(undefined);
   });
 
   it("should release broken items", () => {
-    station.setCapacity(30);
     for (let index = 0; index < 3; index++) {
       station.dock(mockBike);
     }
     for (let index = 0; index < 5; index++) {
       station.dock(mockBrokenBike);
     }
-    station.releaseBrokenItems();
-    expect(station.bikes.length).toEqual(3);
+    const broken = station.collection();
+    expect(broken.length).toEqual(5);
+    expect(station.vehicles.length).toEqual(3);
+  });
+
+  it("should not release a broken bike to consumer", () => {
+    station.dock(mockBrokenBike);
+    let bike = station.releaseVehicle();
+    expect(bike).toBe(undefined);
   });
 
   it("should only dock up to the capacity", () => {
     for (let index = 0; index < capacity; index++) {
       station.dock(mockBike);
     }
-    expect(station.bikes.length).toEqual(capacity);
+    expect(station.vehicles.length).toEqual(capacity);
     expect(() => {
       station.dock(mockBike);
     }).toThrow();
@@ -60,7 +66,7 @@ describe("Station", () => {
     for (let index = 0; index < 30; index++) {
       station.dock(mockBike);
     }
-    expect(station.bikes.length).toEqual(30);
+    expect(station.vehicles.length).toEqual(30);
     expect(() => {
       station.dock(mockBike);
     }).toThrow();

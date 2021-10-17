@@ -1,7 +1,9 @@
-import { Bike } from "./Bike";
+import { IVehicle } from "./IVehicle";
+
+
 
 export class Person {
-  reportBroken(bike: Bike) {
-    bike.reportBroken();
+  reportBroken(vehicle: IVehicle) {
+    vehicle.reportBroken();
   }
 }

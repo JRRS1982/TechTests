@@ -1,4 +1,5 @@
-export class Bike {
+
+export class Scooter {
   working: boolean;
 
   constructor() {
