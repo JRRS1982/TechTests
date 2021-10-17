@@ -1,5 +1,5 @@
 import { bike } from "../__mocks__/bike.mock";
-import { Person } from "./../Person";
+import { Person } from "../Person";
 
 describe("Person", () => {
   let mockBike = bike();

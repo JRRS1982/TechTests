@@ -29,14 +29,28 @@ export class Station {
   }
 
   releaseBike() {
-    if (this.bikes.length > 0) {      
+    if (this.bikes.length > 0) {
       this.get();
     }
   }
 
+  releaseBrokenItems(): IBike[] {
+    let working = this.bikes.filter((item) => {
+      return item.working
+    })
+
+    let notWorking =  this.bikes.filter((item) => {
+      return item.working === false
+    })
+
+    this.bikes = working;
+
+    return notWorking;
+  }
+
   private get() {
     for (let index = 0; index < this.bikes.length; index++) {
-      if (this.bikes[index].working) { 
+      if (this.bikes[index].working) {
         this.bikes.splice(index);
       }
     }

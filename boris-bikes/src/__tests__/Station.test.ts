@@ -1,10 +1,9 @@
-import { Bike } from "./../Bike";
 import { bike } from "../__mocks__/bike.mock";
 import { Station } from "../Station";
 
 describe("Station", () => {
   let mockBike = bike();
-  let brokenBike = bike({ working: false });
+  let mockBrokenBike = bike({ working: false });
   let station: Station;
   let capacity: number = 20;
 
@@ -18,7 +17,7 @@ describe("Station", () => {
   });
 
   it("should dock a broken bike", () => {
-    station.dock(brokenBike);
+    station.dock(mockBrokenBike);
     expect(station.bikes.length).toEqual(1);
   });
 
@@ -26,14 +25,24 @@ describe("Station", () => {
     station.dock(mockBike);
     expect(station.bikes.length).toEqual(1);
     station.releaseBike();
-    console.log(station);
-
     expect(station.bikes.length).toEqual(0);
   });
 
   it("should only release a bike if one is available", () => {
     let myBike = station.releaseBike();
     expect(myBike).toEqual(undefined);
+  });
+
+  it("should release broken items", () => {
+    station.setCapacity(30);
+    for (let index = 0; index < 3; index++) {
+      station.dock(mockBike);
+    }
+    for (let index = 0; index < 5; index++) {
+      station.dock(mockBrokenBike);
+    }
+    station.releaseBrokenItems();
+    expect(station.bikes.length).toEqual(3);
   });
 
   it("should only dock up to the capacity", () => {
