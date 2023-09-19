@@ -2,11 +2,13 @@
 module.exports = {
   roots: [
     // all TS should be in src file.
-    "<rootDir>/src"
+    "<rootDir>/src",
   ],
+  testEnvironment: "jsdom",
   testMatch: [
     // find tests
-    "**/__tests__/**/*.+(ts|tsx|js)", "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    "**/__tests__/**/*.+(ts|tsx|js)",
+    "**/?(*.)+(spec|test).+(ts|tsx|js)",
   ],
   transform: {
     // tell jest to use ts-jest for ts/tsx files

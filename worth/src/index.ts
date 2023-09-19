@@ -55,8 +55,6 @@ const binarySearch = (node: INode | undefined, target: string) => {
     return node.left;
   } else if (target === "-") {
     return node.right;
-  } else if (target === "?") {
-    return node;
   }
 };
 
@@ -97,4 +95,135 @@ export const kataTwo = (input: string): string[] => {
   }
 
   return result;
+};
+
+
+
+/**
+ *
+ * kataThree... using DOMParser which isn't available in the test env
+ *
+ */
+// export const kataThree = (markdown: string) => {
+//   if (!markdown) {
+//     return;
+//   }
+
+//   let text = "";
+
+//   // handle html text
+//   const parser = new DOMParser();
+//   const doc = parser.parseFromString(markdown, "text/html")
+//   // remove html tags
+//   if (doc.body.firstChild) {
+//     if (doc.body.firstChild.textContent) {
+//       markdown = doc.body.firstChild.textContent;
+//     }
+//   }
+
+//   let isError;
+//   let size = 0;
+//   const splitWords = markdown.split(" ");
+
+//   // remove space from first word
+//   if (!splitWords[0]) {
+//     splitWords.shift();
+//   }
+
+//   // handle a case where the string starts with a space
+//   if (markdown[0] === " ") {
+//     markdown = markdown.substring(1);
+//   }
+
+//   // error if invalid hash count
+//   if (splitWords[0].length > 6) {
+//     return markdown;
+//   }
+
+//   // error if first word is not all hash
+//   Array.from(splitWords[0]).forEach((char) => {
+//     if (char !== "#") {
+//       isError = markdown;
+//     } else {
+//       size++;
+//     }
+//   });
+
+//   text = markdown.substring(size + 1);
+
+//   return isError || `<h${size}>${text}</h${size}>`;
+// };
+
+
+const removeStartSpace = (md: string) => {
+  let emptySpaces = 0;
+  for (let index = 0; index < md.length; index++) {
+    if (md[index] === " ") {
+      emptySpaces++;
+    } else {
+      break;
+    }
+  }
+
+  // handle a case where the string starts with a/multiple spaces
+  if (emptySpaces) {
+    md = md.substring(emptySpaces);
+  }
+  return md;
+}
+
+const removeEndSpace = (md: string) => {
+  let emptySpaces = 0;
+  for (let index = md.length - 1; index >= 0; index--) {
+    if (md[index] === " ") {
+      emptySpaces++;
+    } else {
+      break;
+    }
+  }
+
+  // handle a case where the string ends with a/multiple spaces
+  if (emptySpaces) {
+    md = md.substring(0, md.length - emptySpaces);
+  }
+  return md;
+}
+
+// prior to using DOMParser
+export const kataThree = (markdown: string) => {
+  if (!markdown) {
+    return;
+  }
+
+  let isError;
+  markdown = markdown.replace(/<[^>]+>/g, "");
+
+  markdown = removeStartSpace(markdown);
+  markdown = removeEndSpace(markdown);
+
+  let size = 0;
+  const splitWords = markdown.split(" ");
+
+  if (!splitWords[0]) {
+    splitWords.shift();
+  }
+
+  // error if first word is not all hash
+  Array.from(splitWords[0]).forEach((char) => {
+    if (char !== "#") {
+      isError = markdown;
+    } else {
+      size++;
+    }
+  });
+
+  // test for invalid hash count
+  if (splitWords[0].length > 6) {
+    return markdown;
+  }
+
+  let text = markdown.substring(splitWords[0].length + 1);
+  text = removeStartSpace(text);
+
+  return isError || `<h${size}>${text}</h${size}>`;
 };
