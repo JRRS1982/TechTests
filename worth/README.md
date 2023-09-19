@@ -1,7 +1,7 @@
-# Template for TS and Jest Kata
+# Worth
 
-1. Copy this template to chosen location.
-2. Update package.json name to suit your kata.
-3. `npm install` at root.
-4. Write your tests and then your code.
-5. Update readme, add a reflection and complete.
+A collection of three kata that I was tasked to complete for Worth.
+
+1. A simple fizzBuzz style maths question
+2. A graph / binary graph.... which splits.
+3. HTML / parsing a string.
